@@ -1,1 +1,165 @@
-<h1>Hello this is friends.html</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+
+        <!-- Wifi Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9m8 8l3 3l3-3a4.237 4.237 0 0 0-6 0m-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13"
+          />
+        </svg>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Lock Icon -->
+        <svg
+          class="rotate-locked"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 2c5.523 0 10 4.477 10 10c0 2.136-.67 4.116-1.811 5.741L17 12h3a8 8 0 1 0-2.46 5.772l.998 1.795A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2m0 5a3 3 0 0 1 3 3v1h1v5H8v-5h1v-1a3 3 0 0 1 3-3m0 2a1 1 0 0 0-.993.883L11 10v1h2v-1a1 1 0 0 0-.883-.993z"
+          />
+        </svg>
+
+        <span>11%</span>
+
+        <!-- Battery Icon -->
+        <svg
+          class="battery-low"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 72 72"
+        >
+          <path
+            fill="#d0cfce"
+            d="M60.814 42.802a1.04 1.04 0 0 1 1.034-1.042h4.285v-9.573h-4.285a1.04 1.04 0 0 1-1.034-1.042m0 0v-7.463H5.677v26.074h55.137v-6.954"
+          />
+          <path fill="#d22f27" d="M11.501 45.784h9.119V27.771h-9.119Z" />
+          <g
+            fill="none"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              d="M61.081 31.348v-7.16a1 1 0 0 0-1-1H6.772a1 1 0 0 0-1 1v25.017a1 1 0 0 0 1 1h53.313a1 1 0 0 0 1-1V42.53h5.143V31.347Z"
+            />
+            <path d="M11 27.36h10.121v19.007H11z" />
+          </g>
+        </svg>
+
+        <!-- Lightning Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M11 21h-1l1-7H6.74S10.42 7.54 13 3h1l-1 7h4.28z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <!-- User Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.76em"
+              height="2em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256m-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <!-- Comment Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32m0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2l-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29c7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1l-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160s-93.3 160-208 160"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <!-- Search Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__alert"></span>
+            <!-- Ellipsis Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.5em"
+              height="2.5em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M6.5 14a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-1-2a1 1 0 1 0 2 0a1 1 0 0 0-2 0m6.5 2a2 2 0 1 1 0-4a2 2 0 0 1 0 4m-1-2a1 1 0 1 0 2 0a1 1 0 0 0-2 0m5.5 0a1 1 0 1 0 2 0a1 1 0 0 0-2 0m1 2a2 2 0 1 1 0-4a2 2 0 0 1 0 4"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
