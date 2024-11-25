@@ -151,7 +151,7 @@
         />
       </svg>
       Friend's Names Display
-      <!-- Chevron Icon -->
+      <!-- Chevron Right Icon -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.2em"
@@ -165,16 +165,71 @@
       </svg>
     </a>
 
-    <div class="user-component">
-      <div class="user-component__column">
-        <img src="img/rabbit.png" class="user-component__avatar" />
-        <div class="user-component__text">
-          <h4 class="user-component__title">Rabbit</h4>
-          <h6 class="user-component__subtitle">This text is whatever</h6>
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/rabbit.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Rabbit</h4>
+            <!-- <h6 class="user-component__subtitle">This text is whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <!-- Chevron Up Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m6 15l6-6l6 6"
+            />
+          </svg>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="img/penguin.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title-not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <!-- Chevron Right Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="user-component__column"></div>
-    </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
