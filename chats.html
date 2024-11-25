@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Chats - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -90,7 +90,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span>
           <!-- Search Icon -->
@@ -103,6 +103,25 @@
             <path
               fill="currentColor"
               d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+            />
+          </svg>
+        </span>
+        <span>
+          <!-- Message Add Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12.5 3.004a33 33 0 0 0-2.67.067c-4.184.278-7.516 3.657-7.79 7.9a20 20 0 0 0 0 2.52c.1 1.545.783 2.976 1.588 4.184c.467.845.159 1.9-.328 2.823c-.35.665-.526.997-.385 1.237c.14.24.455.248 1.084.263c1.245.03 2.084-.322 2.75-.813c.377-.279.566-.418.696-.434s.387.09.899.3c.46.19.995.307 1.485.34c1.425.094 2.914.094 4.342 0c4.183-.278 7.515-3.658 7.789-7.9c.042-.655.051-1.328.027-1.991M8.5 15h7m-7-5H12m3-4.5h7M18.5 2v7"
+              color="currentColor"
             />
           </svg>
         </span>
@@ -137,98 +156,20 @@
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <!-- Info Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5em"
-        height="1.5em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
-        />
-      </svg>
-      Friend's Names Display
-      <!-- Chevron Right Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.2em"
-        height="1.2em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
-        />
-      </svg>
-    </a>
-
     <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            src="img/rabbit.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
+          <img src="img/rabbit.jpg" class="user-component__avatar" />
           <div class="user-component__text">
-            <h4 class="user-component__title">Rabbit</h4>
-            <!-- <h6 class="user-component__subtitle">This text is whatever</h6> -->
+            <h4 class="user-component__title">KokoaTalk</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kokoa Account Info
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <!-- Chevron Up Icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m6 15l6-6l6 6"
-            />
-          </svg>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/penguin.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title-not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <!-- Chevron Right Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.2em"
-                height="1.2em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
-                />
-              </svg>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
         </div>
       </div>
     </main>
@@ -237,16 +178,16 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <!-- Fullfilled User Icon -->
+            <!-- Empty User Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="1.76em"
+              width="1.76m"
               height="2em"
               viewBox="0 0 448 512"
             >
               <path
                 fill="currentColor"
-                d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256m-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3z"
+                d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0m-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0M49.3 464h349.5c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3"
               />
             </svg>
           </a>
@@ -254,7 +195,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="badge nav__notification">1</span>
-            <!-- Empty Comment Icon -->
+            <!-- Fullfilled Comment Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2em"
@@ -263,7 +204,7 @@
             >
               <path
                 fill="currentColor"
-                d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32m0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2l-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29c7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1l-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160s-93.3 160-208 160"
+                d="M512 240c0 114.9-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6C73.6 471.1 44.7 480 16 480c-6.5 0-12.3-3.9-14.8-9.9s-1.1-12.8 3.4-17.4l.3-.3c.3-.3.7-.7 1.3-1.4c1.1-1.2 2.8-3.1 4.9-5.7c4.1-5 9.6-12.4 15.2-21.6c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208"
               />
             </svg>
           </a>
