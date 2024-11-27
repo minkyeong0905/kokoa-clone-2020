@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Find - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -90,7 +90,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span>
           <!-- Search Icon -->
@@ -107,20 +107,6 @@
           </svg>
         </span>
         <span>
-          <!-- Music Icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              d="M21.65 2.24a1 1 0 0 0-.8-.23l-13 2A1 1 0 0 0 7 5v10.35A3.45 3.45 0 0 0 5.5 15A3.5 3.5 0 1 0 9 18.5v-7.64l11-1.69v4.18a3.45 3.45 0 0 0-1.5-.35a3.5 3.5 0 1 0 3.5 3.5V3a1 1 0 0 0-.35-.76M5.5 20A1.5 1.5 0 1 1 7 18.5A1.5 1.5 0 0 1 5.5 20m13-2a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5M20 7.14L9 8.83v-3l11-1.66Z"
-            />
-          </svg>
-        </span>
-        <span>
           <!-- Cog Icon (Setting Icon) -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -133,57 +119,19 @@
               d="M19.9 12.66a1 1 0 0 1 0-1.32l1.28-1.44a1 1 0 0 0 .12-1.17l-2-3.46a1 1 0 0 0-1.07-.48l-1.88.38a1 1 0 0 1-1.15-.66l-.61-1.83a1 1 0 0 0-.95-.68h-4a1 1 0 0 0-1 .68l-.56 1.83a1 1 0 0 1-1.15.66L5 4.79a1 1 0 0 0-1 .48L2 8.73a1 1 0 0 0 .1 1.17l1.27 1.44a1 1 0 0 1 0 1.32L2.1 14.1a1 1 0 0 0-.1 1.17l2 3.46a1 1 0 0 0 1.07.48l1.88-.38a1 1 0 0 1 1.15.66l.61 1.83a1 1 0 0 0 1 .68h4a1 1 0 0 0 .95-.68l.61-1.83a1 1 0 0 1 1.15-.66l1.88.38a1 1 0 0 0 1.07-.48l2-3.46a1 1 0 0 0-.12-1.17ZM18.41 14l.8.9l-1.28 2.22l-1.18-.24a3 3 0 0 0-3.45 2L12.92 20h-2.56L10 18.86a3 3 0 0 0-3.45-2l-1.18.24l-1.3-2.21l.8-.9a3 3 0 0 0 0-4l-.8-.9l1.28-2.2l1.18.24a3 3 0 0 0 3.45-2L10.36 4h2.56l.38 1.14a3 3 0 0 0 3.45 2l1.18-.24l1.28 2.22l-.8.9a3 3 0 0 0 0 3.98m-6.77-6a4 4 0 1 0 4 4a4 4 0 0 0-4-4m0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2"
             />
           </svg>
+
+          <!-- Cog alert dot -->
+          <div class="cog__div">
+            <span class="small-badge cog__alert"></span>
+          </div>
         </span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <!-- Info Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.5em"
-        height="1.5em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
-        />
-      </svg>
-      Friend's Names Display
-      <!-- Chevron Right Icon -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1.2em"
-        height="1.2em"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="currentColor"
-          d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
-        />
-      </svg>
-    </a>
-
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/rabbit.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Rabbit</h4>
-            <!-- <h6 class="user-component__subtitle">This text is whatever</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <!-- Chevron Up Icon -->
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <!-- QR Scan Icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
@@ -191,45 +139,66 @@
             viewBox="0 0 24 24"
           >
             <path
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m6 15l6-6l6 6"
+              fill="currentColor"
+              d="M15 3h6v5h-2V5h-4zM9 3v2H5v3H3V3zm6 18v-2h4v-3h2v5zm-6 0H3v-5h2v3h4zM3 11h18v2H3z"
             />
           </svg>
+          <span>QR Code</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/penguin.jpg"
-              class="user-component__avatar user-component__avatar--sm"
+        <div class="find-icons__icon">
+          <!-- Address Book Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="currentColor"
+              d="M83.19 174.4a8 8 0 0 0 11.21-1.6a52 52 0 0 1 83.2 0a8 8 0 1 0 12.8-9.6a67.9 67.9 0 0 0-27.4-21.69a40 40 0 1 0-53.94 0A67.9 67.9 0 0 0 81.6 163.2a8 8 0 0 0 1.59 11.2M112 112a24 24 0 1 1 24 24a24 24 0 0 1-24-24m96-88H64a16 16 0 0 0-16 16v24H32a8 8 0 0 0 0 16h16v40H32a8 8 0 0 0 0 16h16v40H32a8 8 0 0 0 0 16h16v24a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16m0 192H64V40h144Z"
             />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title-not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <!-- Chevron Right Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.2em"
-                height="1.2em"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M10 6L8.59 7.41L13.17 12l-4.58 4.59L10 18l6-6z"
-                />
-              </svg>
-            </div>
-          </div>
+          </svg>
+          <span>Add by<br />Contacts</span>
         </div>
+        <div class="find-icons__icon">
+          <!-- Id Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 32 32"
+          >
+            <g fill="currentColor">
+              <path
+                d="M13.006 9.163c0-.76.616-1.375 1.375-1.375h3.305c4.551 0 8.278 3.637 8.278 8.17c0 4.531-3.727 8.169-8.278 8.169H14.38c-.76 0-1.375-.616-1.375-1.375zm2.75 12.089c0 .069.056.125.125.125h1.805c3.074 0 5.528-2.447 5.528-5.42s-2.454-5.42-5.528-5.42H15.88a.125.125 0 0 0-.125.126zM9.385 7.89a1.374 1.374 0 0 1 1.377 1.373l.014 13.385a1.375 1.375 0 0 1-2.75.003L8.012 9.266a1.375 1.375 0 0 1 1.373-1.377"
+              />
+              <path
+                d="M6 1a5 5 0 0 0-5 5v20a5 5 0 0 0 5 5h20a5 5 0 0 0 5-5V6a5 5 0 0 0-5-5zM3 6a3 3 0 0 1 3-3h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"
+              />
+            </g>
+          </svg>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <!-- Envelope Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 56 56"
+          >
+            <path
+              fill="currentColor"
+              d="M9.484 48.191h37.734c4.22 0 6.657-2.437 6.657-7.265V15.05c0-4.805-2.46-7.242-7.36-7.242H8.782c-4.195 0-6.656 2.414-6.656 7.242v25.875c0 4.851 2.484 7.265 7.36 7.265m15.727-19.007L7.516 11.723c.515-.211 1.124-.328 1.851-.328h37.29c.726 0 1.359.117 1.898.375L30.883 29.184c-1.008 1.007-1.899 1.453-2.836 1.453c-.938 0-1.828-.446-2.836-1.453M5.71 40.926v-26.11l13.476 13.22L5.734 41.323c-.023-.117-.023-.258-.023-.398m44.578-25.852v26.18L36.906 28.035L50.29 14.887zM9.367 44.606c-.68 0-1.242-.094-1.734-.305l14.015-13.852l1.524 1.5c1.64 1.617 3.21 2.297 4.875 2.297c1.64 0 3.234-.68 4.875-2.297l1.523-1.5l13.993 13.828c-.493.235-1.102.328-1.782.328Z"
+            />
+          </svg>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
       </div>
     </main>
 
@@ -237,16 +206,16 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <!-- Fullfilled User Icon -->
+            <!-- Empty User Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="1.76em"
+              width="1.76m"
               height="2em"
               viewBox="0 0 448 512"
             >
               <path
                 fill="currentColor"
-                d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256m-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-98.5-79.8-178.3-178.3-178.3z"
+                d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0m-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0M49.3 464h349.5c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3"
               />
             </svg>
           </a>
@@ -270,7 +239,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html">
-            <!-- Search Icon -->
+            <!-- Solid Search Icon -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2em"
@@ -279,7 +248,9 @@
             >
               <path
                 fill="currentColor"
-                d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+                fill-rule="evenodd"
+                d="M11 2a9 9 0 1 0 5.618 16.032l3.675 3.675a1 1 0 0 0 1.414-1.414l-3.675-3.675A9 9 0 0 0 11 2m-6 9a6 6 0 1 1 12 0a6 6 0 0 1-12 0"
+                clip-rule="evenodd"
               />
             </svg>
           </a>
