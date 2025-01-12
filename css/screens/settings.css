@@ -1,0 +1,32 @@
+.settings-list {
+    padding: 20px 0px;
+    border-bottom: var(--main-border);
+}
+
+.settings__setting {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings__setting:last-child {
+    border-bottom: 0px;
+}
+
+.settings__setting svg {
+    opacity: 0.8;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.settings__setting-new-icon {
+    color: tomato;
+    margin-left: 5px;
+}
+
+.settings__setting-column:last-child {
+    opacity: 0.7;
+}

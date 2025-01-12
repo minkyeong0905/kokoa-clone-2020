@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+
+        <!-- Wifi Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9m8 8l3 3l3-3a4.237 4.237 0 0 0-6 0m-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13"
+          />
+        </svg>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <!-- Lock Icon -->
+        <svg
+          class="rotate-locked"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 2c5.523 0 10 4.477 10 10c0 2.136-.67 4.116-1.811 5.741L17 12h3a8 8 0 1 0-2.46 5.772l.998 1.795A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2m0 5a3 3 0 0 1 3 3v1h1v5H8v-5h1v-1a3 3 0 0 1 3-3m0 2a1 1 0 0 0-.993.883L11 10v1h2v-1a1 1 0 0 0-.883-.993z"
+          />
+        </svg>
+
+        <span>11%</span>
+
+        <!-- Battery Icon -->
+        <svg
+          class="battery-low"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 72 72"
+        >
+          <path
+            fill="#d0cfce"
+            d="M60.814 42.802a1.04 1.04 0 0 1 1.034-1.042h4.285v-9.573h-4.285a1.04 1.04 0 0 1-1.034-1.042m0 0v-7.463H5.677v26.074h55.137v-6.954"
+          />
+          <path fill="#d22f27" d="M11.501 45.784h9.119V27.771h-9.119Z" />
+          <g
+            fill="none"
+            stroke="#000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path
+              d="M61.081 31.348v-7.16a1 1 0 0 0-1-1H6.772a1 1 0 0 0-1 1v25.017a1 1 0 0 0 1 1h53.313a1 1 0 0 0 1-1V42.53h5.143V31.347Z"
+            />
+            <path d="M11 27.36h10.121v19.007H11z" />
+          </g>
+        </svg>
+
+        <!-- Lightning Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M11 21h-1l1-7H6.74S10.42 7.54 13 3h1l-1 7h4.28z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <!-- Angle-left Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="3em"
+            height="3em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m15 18l-6-6l6-6"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <!-- Search Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Megaphone Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 15V7m0 8l5.504 3.145A1 1 0 0 0 20 17.277V4.723a1 1 0 0 0-1.496-.868L13 7m0 8h-3m3-8H7a4 4 0 0 0-4 4v0a4 4 0 0 0 4 4v0m0 0v4.5A1.5 1.5 0 0 0 8.5 21v0a1.5 1.5 0 0 0 1.5-1.5V15m-3 0h3"
+              />
+            </svg>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Flask Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M176 48h160M118 304h276M208 48v93.48a64.1 64.1 0 0 1-9.88 34.18L73.21 373.49C48.4 412.78 76.63 464 123.08 464h265.84c46.45 0 74.68-51.22 49.87-90.51L313.87 175.66a64.1 64.1 0 0 1-9.87-34.18V48"
+              />
+            </svg>
+            <span>Kokoa Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Info Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 16.5q.214 0 .357-.144T12.5 16v-4.5q0-.213-.144-.356T11.999 11t-.356.144t-.143.356V16q0 .213.144.356t.357.144M12 9.577q.262 0 .439-.177t.176-.438t-.177-.439T12 8.346t-.438.177t-.177.439t.177.438t.438.177M12.003 21q-1.867 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709M12 20q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"
+              />
+            </svg>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
+
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Lock Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M5 21V9h3V7q0-1.671 1.165-2.835Q10.329 3 12 3t2.836 1.165T16 7v2h3v12zm1-1h12V10H6zm6-3.5q.633 0 1.066-.434q.434-.433.434-1.066t-.434-1.066T12 13.5t-1.066.434Q10.5 14.367 10.5 15t.434 1.066q.433.434 1.066.434M9 9h6V7q0-1.25-.875-2.125T12 4t-2.125.875T9 7zM6 20V10z"
+              />
+            </svg>
+            <span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Bell Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M18.75 9.71v-.705C18.75 5.136 15.726 2 12 2S5.25 5.136 5.25 9.005v.705a4.4 4.4 0 0 1-.692 2.375L3.45 13.81c-1.011 1.575-.239 3.716 1.52 4.214a25.8 25.8 0 0 0 14.06 0c1.759-.498 2.531-2.639 1.52-4.213l-1.108-1.725a4.4 4.4 0 0 1-.693-2.375Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  d="M7.5 19c.655 1.748 2.422 3 4.5 3s3.845-1.252 4.5-3"
+                />
+              </g>
+            </svg>
+            <span>Notifications</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Empty User Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1.2em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0m-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0M49.3 464h349.5c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3"
+              />
+            </svg>
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Empty Comment Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32m0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2l-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29c7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1l-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160s-93.3 160-208 160"
+              />
+            </svg>
+            <span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Brightness Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 48 48"
+            >
+              <g fill="none">
+                <path
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M24.02 35.354c6.076 0 11-4.925 11-11s-4.924-11-11-11s-11 4.924-11 11s4.925 11 11 11Z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="4"
+                  d="m38.96 9.01l-2.46 2.474M11.067 36.745l-2.046 2.059M24 41.353v3m20-20.999h-4m-2.468 12.982L40 38.804"
+                />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M24.02 17.354a7 7 0 1 0 0 14"
+                  clip-rule="evenodd"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="4"
+                  d="M4 24.354h4M10.044 9.01l2.053 2.053M24 3.354v4"
+                />
+              </g>
+            </svg>
+            <span>Display</span>
+            <!-- Circle Letter N Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="settings__setting-new-icon"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m-1.106 5.553C10.423 6.609 9 6.945 9 8v8a1 1 0 0 0 1 1l.117-.007A1 1 0 0 0 11 16v-3.764l2.106 4.211c.471.944 1.894.608 1.894-.447V8a1 1 0 0 0-1-1l-.117.007A1 1 0 0 0 13 8v3.764z"
+              />
+            </svg>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Paintbrush Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 14 14"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.5 8.5h-9l-.76 3.8a1 1 0 0 0 .21.83a1 1 0 0 0 .77.37h8.56a1 1 0 0 0 .77-.37a1 1 0 0 0 .21-.83zm0-3a1 1 0 0 1 1 1v2h-11v-2a1 1 0 0 1 1-1H4a1 1 0 0 0 1-1v-2a2 2 0 1 1 4 0v2a1 1 0 0 0 1 1zm-3 8V11"
+              />
+            </svg>
+            <span>Themes</span>
+            <!-- Circle Letter N Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="settings__setting-new-icon"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m-1.106 5.553C10.423 6.609 9 6.945 9 8v8a1 1 0 0 0 1 1l.117-.007A1 1 0 0 0 11 16v-3.764l2.106 4.211c.471.944 1.894.608 1.894-.447V8a1 1 0 0 0-1-1l-.117.007A1 1 0 0 0 13 8v3.764z"
+              />
+            </svg>
+          </div>
+          <div class="settings__setting-column">Default theme</div>
+        </li>
+
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <!-- Call Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 12 12"
+            >
+              <path
+                fill="currentColor"
+                d="M5.561 2.551a.84.84 0 0 0-1.033-.514c-.973.3-1.653 1.135-1.507 2.101A8.7 8.7 0 0 0 4.092 7.18a8.8 8.8 0 0 0 2.083 2.445c.754.61 1.812.442 2.558-.258A.85.85 0 0 0 8.81 8.21l-.534-.653a.845.845 0 0 0-.91-.272l-1.232.39l-.215-.222a5 5 0 0 1-.706-.929a4.8 4.8 0 0 1-.446-1.079l-.083-.295l.95-.875a.86.86 0 0 0 .221-.935zm-1.327-1.47a1.84 1.84 0 0 1 2.264 1.121l.293.788a1.86 1.86 0 0 1-.48 2.019l-.49.451c.063.174.148.373.258.566c.11.19.238.363.355.504l.63-.2a1.845 1.845 0 0 1 1.985.593l.534.653a1.85 1.85 0 0 1-.166 2.52c-.994.933-2.617 1.32-3.87.306a9.8 9.8 0 0 1-2.32-2.722a9.7 9.7 0 0 1-1.195-3.393c-.24-1.593.903-2.806 2.202-3.205"
+              />
+            </svg>
+            <span>Call</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <!-- Empty User Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.76m"
+              height="2em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M304 128a80 80 0 1 0-160 0a80 80 0 1 0 160 0m-208 0a128 128 0 1 1 256 0a128 128 0 1 1-256 0M49.3 464h349.5c-8.9-63.3-63.3-112-129-112h-91.4c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4c98.5 0 178.3 79.8 178.3 178.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="badge nav__notification">1</span>
+            <!-- Empty Comment Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32m0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2l-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29c7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1l-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160s-93.3 160-208 160"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <!-- Thin Search Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2em"
+              height="2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="small-badge nav__alert"></span>
+            <!-- Fullfilled Ellipsis Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2.5em"
+              height="2.5em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M7 12a2 2 0 1 1-4.001-.001A2 2 0 0 1 7 12m12-2a2 2 0 1 0 .001 4.001A2 2 0 0 0 19 10m-7 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 12 10"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
